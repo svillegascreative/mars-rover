@@ -17,13 +17,13 @@ class Rover
     @x_coordinate = position[0].to_i
     @y_coordinate = position[1].to_i
     @bearing = position[2]
-    # get_instructions
+    get_instructions
   end
 
   def get_instructions
     puts "Instructions for rover?\n(L = left, R = right, M = move forward, e.g. LLMMRMLMMR)"
     rover_instructions = gets.chomp
-    follow_instruction(rover_instructions)
+    follow_instructions(rover_instructions)
   end
 
   def follow_instructions(instruction)
