@@ -36,7 +36,6 @@ class Rover
         move
       end
     end
-    report
   end
 
   def turn(direction)
@@ -82,11 +81,7 @@ class Rover
     puts "Current position of #{name} is #{x_coordinate} #{y_coordinate} #{bearing.upcase}"
   end
 
-  def move_by1
-    @y_coordinate += 1
-  end
-
-end # class Rover
+end
 
 # TEST:
 # spirit = Rover.new("Spirit")
