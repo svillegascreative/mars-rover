@@ -26,7 +26,7 @@ class Rover
     follow_instruction(rover_instructions)
   end
 
-  def follow_instruction(instruction)
+  def follow_instructions(instruction)
     instruction.each_char do |char|
       if char == "L"
         turn("L")
@@ -91,12 +91,8 @@ end # class Rover
 # TEST:
 # spirit = Rover.new("Spirit")
 # spirit.turn("L")
-# spirit.read_instruction("LMLMLMLMM")
+# spirit.follow_instructions("LMLMLMLMM")
 # spirit.report
-#
-# opportunity = Rover.new("Opportunity", 3, 3, "E")
-# opportunity.read_instruction("MMRMMRMRRM")
-# opportunity.report
 
 
 
